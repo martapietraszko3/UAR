@@ -1,0 +1,97 @@
+# --- STANDARDOWE DLA C++/VISUAL STUDIO ---
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.VC.db
+*.VC.opendb
+.vs/
+.vscode/
+[Bb]in/
+[Oo]bj/
+build/
+Debug*/
+Release*/
+x64/
+x86/
+ARM/
+arm/
+bld/
+out/
+*.obj
+*.o
+*.pch
+*.pdb
+*.ilk
+*.idb
+*.ipdb
+*.tlog
+*.lastbuildstate
+*.lib
+*.dll
+*.exe
+*.app
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CTestTestfile.cmake
+install_manifest.txt
+cmake-build-*/
+packages/
+*.nupkg
+.nuget/
+vcpkg_installed/
+installed/
+buildtrees/
+*.code-workspace
+.idea/
+TestResults/
+*.coverage
+*.coveragexml
+*.log
+*.tmp
+*.temp
+*.swp
+*~
+.DS_Store
+Thumbs.db
+ipch/
+*.ipch
+.env
+
+# =======================================================
+#               SEKCJA SPECJALNA QT (POPRAWIONA)
+# =======================================================
+
+# 1. Folder tymczasowy Clangd (to te setki plików .idx)
+# Gwiazdki na początku łapią folder niezależnie czy jest w 'uar' czy głębiej
+**/.qtc_clangd/
+.qtc_clangd/
+
+# 2. Plik z komendami kompilacji (widoczny na screenie)
+compile_commands.json
+
+# 3. Pliki budowania Qt (Makefiles)
+Makefile*
+**/Makefile*
+
+# 4. Pliki generowane z UI (ui_*.h) i MOC (moc_*.cpp)
+ui_*.h
+**/ui_*.h
+moc_*.cpp
+**/moc_*.cpp
+qrc_*.cpp
+**/qrc_*.cpp
+
+# 5. Foldery wyjściowe (debug/release) wewnątrz folderów projektu
+debug/
+**/debug/
+release/
+**/release/
+
+# 6. Konfiguracja użytkownika Qt Creatora
+*.pro.user
+*.pro.user.*
+
+# 7. Tymczasowe pliki qmake
+.qmake.stash
